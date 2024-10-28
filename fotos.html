@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"/>
+		<title>La Casa de los Gatos</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+
+		<header>
+			<div class="container-hero">
+				<div class="container hero">
+					<div class="customer-support">
+						<i class="fa-solid fa-headset"></i>
+						<div class="content-customer-support">
+							<span class="text">Soporte al cliente</span>
+							<span class="number">123-456-7890</span>
+						</div>
+					</div>
+
+					<div class="container-logo">
+						<i class="fa-solid fa-mug-hot"></i>
+						<h1 class="logo"><a href="/">La Casa de los Gatos</a></h1>
+					</div>
+
+					<div class="container-user">
+						<i class="fa-solid fa-user"></i>
+						<a href="login.html"> LOGIN </a>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<a href="index.html"> INICIO</a>
+						<a href="menu.html"> MENU</a>
+						<a href="reservaciones.php"> REALIZA TU RESERVACION</a>
+						<a href="reseñas.php"> RESEÑAS</a>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<style> 
+			body {
+				background: #f5deb3; /* Color de fondo café tenue (Wheat) */
+				padding: 10px;
+			}
+			
+			.mama {
+				width: 100%;
+				height: 100%;
+				background-color: #d2b48c; /* Color de fondo café tenue (Tan) */
+				margin: auto;
+				padding: 20px;
+			}
+			
+			.slider {
+				width: 100%;
+				max-width: 600px; /* Ancho máximo del slider */
+				overflow: hidden;
+				margin: auto;
+			}
+			
+			.slider ul {
+				display: flex;
+				padding: 0;
+				width: 1500%; /* 100% por cada imagen, así que 15 imágenes = 1500% */
+				animation: cambio 60s infinite alternate ease-in-out; /* Duración de la animación */
+				list-style: none;
+				animation-play-state: running; /* Estado de la animación por defecto */
+			}
+			
+			.slider:hover ul {
+				animation-play-state: paused; /* Pausa la animación al pasar el mouse */
+			}
+			
+			.slider li {
+				width: 100%; /* Cada imagen ocupa el 100% del slider */
+				list-style: none;
+			}
+			
+			.slider img {
+				width: 100%;
+				height: 500px; /* Ajusta la altura según sea necesario */
+				object-fit: cover; /* Mantiene la proporción */
+				border-radius: 4px; /* Bordes redondeados */
+			}
+			
+			@keyframes cambio {
+				0% {
+					margin-left: 0%;
+				}
+				6.67% {
+					margin-left: 0%; /* Muestra la primera imagen */
+				}
+				6.67% {
+					margin-left: -100%; /* Desplazamiento para la segunda imagen */
+				}
+				13.34% {
+					margin-left: -100%; /* Mantiene la segunda imagen visible */
+				}
+				13.34% {
+					margin-left: -200%; /* Desplazamiento para la tercera imagen */
+				}
+				20% {
+					margin-left: -200%; /* Mantiene la tercera imagen visible */
+				}
+				20% {
+					margin-left: -300%; /* Desplazamiento para la cuarta imagen */
+				}
+				26.67% {
+					margin-left: -300%; /* Mantiene la cuarta imagen visible */
+				}
+				26.67% {
+					margin-left: -400%; /* Desplazamiento para la quinta imagen */
+				}
+				33.34% {
+					margin-left: -400%; /* Mantiene la quinta imagen visible */
+				}
+				/* Continúa así hasta la décimo quinta imagen */
+				100% {
+					margin-left: -1400%; /* Desplazamiento final para la última imagen */
+				}
+			}
+			
+		</style>		
+	</body>
+
+
+	<body>
+		<div class="mama">
+			<h1><center>Slider Automático</h1></center>
+			<div class="slider">
+				<ul>
+					<li><img src="img/vaca1.jpg" alt="Imagen 1"></li>
+					<li><img src="img/vaca5.jpg" alt="Imagen 5"></li>
+					<li><img src="img/vaca6.jpg" alt="Imagen 6"></li>
+					<li><img src="img/vaca7.jpg" alt="Imagen 7"></li>
+					<li><img src="img/vaca8.jpg" alt="Imagen 8"></li>
+					<li><img src="img/vaca9.jpeg" alt="Imagen 9"></li>  
+					<li><img src="img/vaca10.jpeg" alt="Imagen 9"></li>
+					<li><img src="img/vaca11.jpeg" alt="Imagen 9"></li>
+					<li><img src="img/vaca12.jpg" alt="Imagen 9"></li>     
+					<li><img src="img/vaca13.jpeg" alt="Imagen 9"></li>  
+					<li><img src="img/vaca14.jpeg" alt="Imagen 9"></li>  
+					<li><img src="img/vaca15.jpeg" alt="Imagen 9"></li>  
+					<li><img src="img/vaca16.jpeg" alt="Imagen 9"></li>  
+					<li><img src="img/vaca17.jpeg" alt="Imagen 9"></li>  
+					<li><img src="img/vaca18.jpeg" alt="Imagen 9"></li>           
+				</ul>
+			
+			</div>
+
+
+
+		</div>
+	
+
+	</body>
+        <footer class="footer">
+			<div class="container container-footer">
+				<div class="menu-footer">
+					<div class="contact-info">
+						<p class="title-footer">Información de Contacto</p>
+						<ul>
+							<li>
+								Carretera. Federal Pachuca - México 36.5, 55740 Tecámac,
+                                Estado de México. Plaza Power Center. 
+                                Horario de Atención 10:00 AM A 21:00 PM
+							</li>
+							<li>Teléfono: 123-456-7890</li>
+							<li>Fax: 55555300</li>
+							<li>EmaiL: Lacasadelosgatos's@gmail.com</li>
+						</ul>
+						<div class="social-icons">
+							<span class="facebook">
+								<i class="fa-brands fa-facebook-f"></i>
+							</span>
+							<span class="twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</span>
+							<span class="youtube">
+								<i class="fa-brands fa-youtube"></i>
+							</span>
+							<span class="pinterest">
+								<i class="fa-brands fa-pinterest-p"></i>
+							</span>
+							<span class="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</span>
+						</div>
+					</div>
+
+					<div class="information">
+						<p class="title-footer">Información</p>
+						<ul>
+							<li>Acerca de Nosotros</li>
+							<li>Información Delivery</li>
+							<li>Politicas de Privacidad</li>
+							<li>Términos y condiciones</li>
+							<li>Contactános</li>
+						</ul>
+					</div>
+
+					<div class="my-account">
+						<p class="title-footer">Mi cuenta</p>
+
+						<ul>
+							<li>Mi cuenta</li>
+							<li>Historial de ordenes</li>
+							<li>Lista de deseos</li>
+							<li>Boletín</li>
+							<li>Reembolsos</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+<script src="https://kit.fontawesome.com/39904c0e5e.js" crossorigin="anonymous"></script>
